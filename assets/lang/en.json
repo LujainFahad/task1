@@ -1,0 +1,22 @@
+{
+    "errorInternetConnectionWord": "Please, check your internet connection.",
+    "errorUnexpectedWord": "Opps, something went wrong! \n please try again later.",
+    "latestNewsWord": "Lateset News",
+    "moreButtonWord": "More",
+    "upcomingMatchWord": "Upcoming Matches",
+    "alahliWord": "Al Ahli",
+    "alhilalWord": "Al Hilal",
+    "alnasserWord": "Al Nasser",
+    "alettihadWord": "Al Ettihad",
+    "alettifaqWord": "Al Ettifaq",
+    "alshababWord": "Al Shabab",
+    "date1Word": "Thursday 15 July",
+    "date2Word": "Friday 16 July",
+    "date3Word": "Saturday 17 July",
+    "latestTweetsWord": "Latest Tweets",
+    "homeWord": "Home",
+    "schdeuleWord": "Schdeule",
+    "newsCenterWord": "News Center",
+    "statWord": "Full stats",
+    "refreshWord": "Refresh" 
+}
