@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:trainee_task/app/utility/shared_services/api_response.dart';
+import 'package:trainee_task/app/utility/shared_services/api_services.dart';
 import 'package:trainee_task/app/utility/shared_services/api_urls.dart';
 
 class NewsRepository {
@@ -33,3 +35,48 @@ class NewsRepository {
     return Uri.parse(url);
   }
 }
+
+abstract class ContactRepository {
+  Future<ContactAPI> fetchDetails(
+    String firstName,
+    String lastName,
+    String email,
+    String mobile,
+    String messageTitle,
+    String messageType,
+    String messageDesc,
+    String? attachment,
+  );
+}
+
+// class ContactRepo extends ContactRepository {
+//   @override
+//   Future<ContactAPI> fetchDetails(
+//     String firstName,
+//     String lastName,
+//     String email,
+//     String mobile,
+//     String messageTitle,
+//     String messageType,
+//     String messageDesc,
+//     String? attachment,
+//   ) async {
+//     final response = await http.post(Uri.parse(APIURLs.CONTACTUS), body: {
+//       'firstName': firstName,
+//       'lastName': lastName,
+//       'email': email,
+//       'mobile': mobile,
+//       'messageTitle': messageTitle,
+//       'messageType': messageType,
+//       'messageDesc': messageDesc,
+//       'attachment': attachment,
+//     });
+
+//     if (response.statusCode == 201) {
+//       return ContactAPI.fromJson(response.body);
+//     } else {
+//       debugPrint("ERROR IN API CALL ${response.statusCode}");
+//       throw Exception('Failed to load API data');
+//     }
+//   }
+// }
